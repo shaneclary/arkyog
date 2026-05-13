@@ -68,22 +68,15 @@ export function Hero() {
               fetchPriority="high"
               decoding="async"
             />
+            {/* Subtle bottom shading helps the floating lineage card pop without competing for attention */}
             <div
               aria-hidden
               className="absolute inset-0"
               style={{
                 background:
-                  'linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.45) 100%)',
+                  'linear-gradient(180deg, transparent 70%, rgba(0,0,0,0.25) 100%)',
               }}
             />
-            <figcaption className="absolute bottom-6 left-6 right-6 text-[var(--color-bone)]">
-              <p className="font-serif text-lg md:text-xl italic leading-tight">
-                "{SITE.hero.quote}"
-              </p>
-              <p className="mt-2 text-xs tracking-widest uppercase opacity-80">
-                {SITE.hero.attribution}
-              </p>
-            </figcaption>
           </div>
 
           <div className="hidden md:block absolute -left-10 bottom-10 bg-[var(--color-bone)] border border-[var(--color-sand)] rounded-2xl p-4 shadow-xl shadow-black/5 max-w-[14rem]">
