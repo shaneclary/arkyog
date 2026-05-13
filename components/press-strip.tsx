@@ -1,6 +1,13 @@
 import { SITE } from '@/lib/site';
 
+/**
+ * Renders nothing when `SITE.press` is empty. Add outlets to the array
+ * only after you have a live URL for each — listing publication names
+ * without source URLs is the single biggest credibility risk.
+ */
 export function PressStrip() {
+  if (SITE.press.length === 0) return null;
+
   return (
     <section className="border-y border-[var(--color-sand)]/70 bg-[var(--color-cream)]/60">
       <div className="container-page py-10 md:py-14">

@@ -152,23 +152,18 @@ export default function AboutPage() {
       <section id="credentials" className="bg-[var(--color-cream)] border-y border-[var(--color-sand)]">
         <div className="container-page py-20 md:py-28 grid md:grid-cols-2 gap-12 md:gap-20">
           <div>
-            <p className="eyebrow">Credentials & training</p>
+            <p className="eyebrow">Training & years</p>
             <h2 className="mt-4 font-serif text-4xl md:text-5xl leading-[1.05]">
-              Trained at the source. For four decades.
+              The training, in plain language.
             </h2>
             <p className="mt-6 text-[var(--color-stone)] leading-relaxed max-w-md">
-              The certifications matter less than the years. But for the
-              record, here are both.
+              The years matter more than the paperwork. Here is where I have
+              studied and what I have studied — without claims I cannot back
+              up.
             </p>
           </div>
           <ul className="space-y-5">
-            {[
-              { title: 'Authorized in the Pattabhi Jois lineage', year: '1996' },
-              { title: 'Senior Iyengar Teacher · RIMYI Pune', year: '1998' },
-              { title: 'Shaolin Instructor — 18 Lohan Hands, Staff, Sword', year: '2001' },
-              { title: 'Tai Chi Chuan — Yang style, Cheng Man-Ching lineage', year: '2003' },
-              { title: 'Forty years of continuous teaching', year: '1985 — present' },
-            ].map((c) => (
+            {SITE.credentials.map((c) => (
               <li
                 key={c.title}
                 className="flex items-baseline justify-between gap-6 pb-5 border-b border-[var(--color-sand)] last:border-0"

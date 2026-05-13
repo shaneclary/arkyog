@@ -57,7 +57,7 @@ export function organizationSchema() {
 }
 
 export function courseSchema(course: Course) {
-  return {
+  const base = {
     '@context': 'https://schema.org',
     '@type': 'Course',
     name: course.title,
@@ -70,10 +70,14 @@ export function courseSchema(course: Course) {
     hasCourseInstance: {
       '@type': 'CourseInstance',
       courseMode: course.format,
-      startDate: course.startDate,
-      endDate: course.endDate,
+      startDate: course.datesTba ? undefined : course.startDate,
+      endDate: course.datesTba ? undefined : course.endDate,
       location: course.location,
     },
+  };
+  if (course.priceTba) return base;
+  return {
+    ...base,
     offers: {
       '@type': 'Offer',
       price: course.price / 100,
@@ -85,14 +89,14 @@ export function courseSchema(course: Course) {
 
 export function eventSchema(event: Retreat | Event) {
   const e = event as Retreat;
-  return {
+  const base = {
     '@context': 'https://schema.org',
     '@type': 'Event',
     name: e.title,
     description: e.summary,
-    startDate: e.startDate,
-    endDate: e.endDate,
-    eventStatus: 'https://schema.org/EventScheduled',
+    eventStatus: e.datesTba
+      ? 'https://schema.org/EventScheduled'
+      : 'https://schema.org/EventScheduled',
     eventAttendanceMode:
       e.format === 'online'
         ? 'https://schema.org/OnlineEventAttendanceMode'
@@ -105,6 +109,13 @@ export function eventSchema(event: Retreat | Event) {
     organizer: { '@id': `${SITE.url}/#org` },
     performer: { '@id': `${SITE.url}/#person` },
     image: e.image,
+    ...(e.datesTba
+      ? {}
+      : { startDate: e.startDate, endDate: e.endDate }),
+  };
+  if (e.priceTba) return base;
+  return {
+    ...base,
     offers: {
       '@type': 'Offer',
       price: e.price / 100,

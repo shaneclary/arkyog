@@ -72,7 +72,7 @@ export default async function TrainingDetail({ params }: PageProps) {
             <Detail label="Begins" value={t.datesTba ? 'Announced soon' : formatDateRange(t.startDate, t.endDate).split('–')[0].trim()} />
             <Detail label="Duration" value={t.duration} />
             <Detail label="Location" value={t.location} />
-            <Detail label="Investment" value={formatPrice(t.price)} />
+            <Detail label="Investment" value={t.priceTba ? 'Inquire' : formatPrice(t.price)} />
           </div>
         </section>
 

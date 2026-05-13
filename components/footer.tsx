@@ -6,8 +6,9 @@ const COLUMNS = [
   {
     label: 'Practice',
     links: [
-      { href: '/teach', label: 'Classes' },
-      { href: '/trainings', label: 'Teacher Trainings' },
+      { href: '/teach', label: 'Practice library' },
+      { href: '/trainings', label: 'Programs' },
+      { href: '/master', label: "Master's Practice" },
       { href: '/retreats', label: 'Retreats' },
       { href: '/book', label: 'Book a 1:1' },
     ],

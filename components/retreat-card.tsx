@@ -56,8 +56,12 @@ export function RetreatCard({ item, feature = false }: { item: Retreat; feature?
             </div>
             <div className="mt-6 flex items-end justify-between">
               <div>
-                <p className="text-xs uppercase tracking-widest text-[var(--color-stone)]">From</p>
-                <p className="mt-1 font-serif text-2xl">{formatPrice(item.price)}</p>
+                <p className="text-xs uppercase tracking-widest text-[var(--color-stone)]">
+                  {item.priceTba ? 'Pricing' : 'From'}
+                </p>
+                <p className="mt-1 font-serif text-2xl">
+                  {item.priceTba ? 'Inquire' : formatPrice(item.price)}
+                </p>
               </div>
               <span className="inline-flex items-center gap-1 text-sm font-medium text-[var(--color-ink)] group-hover:gap-2 transition-[gap]">
                 View retreat →

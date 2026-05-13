@@ -55,9 +55,9 @@ export default function TeachPage() {
 
       <CtaBand
         eyebrow="Membership"
-        heading="$29 / month. Live Sunday class included."
-        body="Full library access, the live three-hour Sunday class with Arkady, members-only Q&A on the new moon, and no contracts. First seven days free."
-        primary={{ href: '/book?plan=monthly', label: 'Start 7-day trial' }}
+        heading="Live Sunday class · 20+ hours pre-recorded."
+        body="Membership unlocks the full library plus the live three-hour Sunday class with Arkady. Pricing and trial details announced at launch — join the list to be first to know."
+        primary={{ href: '/library', label: 'Join the list' }}
         secondary={{ href: '/about', label: 'Who is Arkady?' }}
       />
     </>

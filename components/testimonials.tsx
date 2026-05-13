@@ -1,6 +1,13 @@
 import type { Testimonial } from '@/content/types';
+import { SITE } from '@/lib/site';
 import { Card, CardBody } from './ui/card';
 
+/**
+ * Returns null unless `SITE.showTestimonials` is true. Placeholder
+ * testimonials remain in `content/testimonials.ts` for structural
+ * reference but should never reach production until they have been
+ * replaced with real, attributed, photo-permissioned quotes.
+ */
 export function Testimonials({
   items,
   heading = 'What students say',
@@ -10,6 +17,8 @@ export function Testimonials({
   heading?: string;
   eyebrow?: string;
 }) {
+  if (!SITE.showTestimonials || items.length === 0) return null;
+
   return (
     <section className="container-page py-24 md:py-32">
       <div className="max-w-2xl">

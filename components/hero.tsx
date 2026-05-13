@@ -81,7 +81,7 @@ export function Hero() {
                 "{SITE.hero.quote}"
               </p>
               <p className="mt-2 text-xs tracking-widest uppercase opacity-80">
-                — {SITE.hero.attribution}
+                {SITE.hero.attribution}
               </p>
             </figcaption>
           </div>
@@ -89,9 +89,9 @@ export function Hero() {
           <div className="hidden md:block absolute -left-10 bottom-10 bg-[var(--color-bone)] border border-[var(--color-sand)] rounded-2xl p-4 shadow-xl shadow-black/5 max-w-[14rem]">
             <p className="eyebrow">Lineage</p>
             <p className="mt-2 text-sm leading-snug">
-              Trained with <span className="font-medium">Pattabhi Jois</span>,{' '}
-              <span className="font-medium">B.K.S. Iyengar</span>, and Shaolin
-              masters at the source.
+              Studied with <span className="font-medium">Pattabhi Jois</span>,
+              at <span className="font-medium">RIMYI Pune</span>, and in
+              Shaolin forms.
             </p>
           </div>
         </div>

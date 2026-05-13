@@ -1,17 +1,27 @@
 import type { LineageTeacher } from './types';
 
+/**
+ * Lineage entries follow the bulletproof rule:
+ *  - "Studied with X" / "Trained in Y" — defensible, experiential
+ *  - "Authorized by X" / "Certified in Y" / "Senior teacher" — REMOVED
+ *    pending verifiable roster entries or certificate numbers
+ *
+ * Photos with named teachers (Jois, Iyengar, Akilanka, Shaolin masters)
+ * are referenced in Arkady's own EPK and can be shown directly when
+ * scanned and added to /public.
+ */
 export const LINEAGE: LineageTeacher[] = [
   {
     name: 'Sri K. Pattabhi Jois',
     years: 'studied 1990s–2000s',
     lineage: 'Ashtanga',
-    note: "Years of direct study. Authorized in the lineage. The discipline of self-practice, the heat, the rhythm — all of it begins here.",
+    note: "Years of direct study with Pattabhi Jois — the discipline of self-practice, the heat of the practice room, the rhythm of breath and movement. All of it begins here.",
   },
   {
     name: 'B.K.S. Iyengar',
     years: 'studied 1990s',
-    lineage: 'Iyengar · Pune',
-    note: 'The precision of alignment and the courage of long holds. Iyengar taught me that intelligence in the pose matters more than ambition.',
+    lineage: 'Iyengar method · RIMYI Pune',
+    note: 'Time at the institute in Pune. Iyengar taught the precision of alignment and the courage of long holds — intelligence in the pose mattering more than ambition.',
   },
   {
     name: 'Sri T. Krishnamacharya',
@@ -21,26 +31,26 @@ export const LINEAGE: LineageTeacher[] = [
   },
   {
     name: 'Akilanka',
-    years: 'studied 1980s',
-    lineage: 'Classical Hatha · India',
-    note: 'The bandhas, the kriyas, the long pranayama work. Akilanka introduced me to the parts of yoga that are not on Instagram and never will be.',
+    years: '1980s',
+    lineage: 'Classical Hatha',
+    note: "Early years studying the bandhas, the kriyas, and the long pranayama work — the parts of yoga that are not on Instagram and never will be.",
   },
   {
-    name: 'Shaolin masters',
-    years: 'studied 1980s–1990s',
-    lineage: 'Shaolin Kung Fu · 18 Lohan Hands',
-    note: 'Years at the temple. Sword forms, staff forms, the 18 Lohan Hands, the daily 4am wake-ups. The discipline of Shaolin is what lets the yoga go deep.',
+    name: 'Shaolin teachers',
+    years: '1980s–1990s',
+    lineage: 'Shaolin Kung Fu',
+    note: 'Years of training in Shaolin forms — including the 18 Lohan Hands, the staff, and the sword. The discipline of Shaolin is what lets the yoga go deep.',
   },
   {
     name: 'Classical ballet & gymnastics',
-    years: '1970s–1980s · childhood through teens',
-    lineage: 'Pre-yoga foundation',
-    note: "Years of ballet and competitive gymnastics taught my body what a body was capable of long before I ever heard the word asana. Most yoga teachers don't have this. I do.",
+    years: '1960s–1970s · childhood through teens',
+    lineage: 'Pre-yoga foundation · Riga',
+    note: "Years of Soviet-era ballet and competitive gymnastics taught my body what a body was capable of long before I ever heard the word asana. Most yoga teachers don't have this foundation. I do.",
   },
   {
     name: 'Tai Chi & Chi Gung',
     years: 'studied 1990s–present',
-    lineage: 'Internal arts · China',
-    note: "What the West calls 'flow' the Chinese teachers were already practicing in 1300. Tai Chi and Chi Gung are the missing pieces in most yoga educations.",
+    lineage: 'Internal arts',
+    note: "Tai Chi and Chi Gung are the missing pieces in most yoga educations. The internal-arts tradition was practicing what the West now calls 'flow' a thousand years before the word existed.",
   },
 ];

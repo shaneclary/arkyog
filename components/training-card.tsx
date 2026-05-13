@@ -45,7 +45,7 @@ export function TrainingCard({ item }: { item: Course }) {
           <div className="mt-8 pt-8 border-t border-[var(--color-sand)]/70 grid grid-cols-2 md:grid-cols-4 gap-6 items-end">
             <Meta label="Duration" value={item.duration} />
             <Meta label="Location" value={item.location} />
-            <Meta label="Investment" value={formatPrice(item.price)} />
+            <Meta label="Investment" value={item.priceTba ? 'Inquire' : formatPrice(item.price)} />
             <div className="text-right">
               <span className="inline-flex items-center gap-1 text-sm font-medium group-hover:gap-2 transition-[gap]">
                 Full curriculum →

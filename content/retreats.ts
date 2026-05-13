@@ -1,10 +1,9 @@
 import type { Retreat } from './types';
 
 /**
- * Retreat dates are intentionally TBA. The startDate/endDate fields
- * are placeholders kept only so the JSON-LD Event schema validates.
- * `datesTba: true` causes all UI to render "Dates announced soon"
- * instead of the placeholder date range.
+ * Retreat dates and prices intentionally TBA. Placeholders kept so
+ * JSON-LD Event schema validates; UI renders "Dates announced soon"
+ * and "Inquire" instead.
  */
 const TBA_PLACEHOLDER_START = '2099-01-01';
 const TBA_PLACEHOLDER_END = '2099-01-07';
@@ -20,8 +19,9 @@ export const RETREATS: Retreat[] = [
     startDate: TBA_PLACEHOLDER_START,
     endDate: TBA_PLACEHOLDER_END,
     datesTba: true,
-    price: 389000,
-    deposit: 75000,
+    price: 0,
+    priceTba: true,
+    deposit: 0,
     capacity: 14,
     spotsLeft: 14,
     image:
@@ -55,8 +55,9 @@ export const RETREATS: Retreat[] = [
     startDate: TBA_PLACEHOLDER_START,
     endDate: TBA_PLACEHOLDER_END,
     datesTba: true,
-    price: 349000,
-    deposit: 70000,
+    price: 0,
+    priceTba: true,
+    deposit: 0,
     capacity: 12,
     spotsLeft: 12,
     image:
@@ -90,8 +91,9 @@ export const RETREATS: Retreat[] = [
     startDate: TBA_PLACEHOLDER_START,
     endDate: TBA_PLACEHOLDER_END,
     datesTba: true,
-    price: 369000,
-    deposit: 75000,
+    price: 0,
+    priceTba: true,
+    deposit: 0,
     capacity: 14,
     spotsLeft: 14,
     image:
@@ -125,8 +127,9 @@ export const RETREATS: Retreat[] = [
     startDate: TBA_PLACEHOLDER_START,
     endDate: TBA_PLACEHOLDER_END,
     datesTba: true,
-    price: 419000,
-    deposit: 85000,
+    price: 0,
+    priceTba: true,
+    deposit: 0,
     capacity: 10,
     spotsLeft: 10,
     image:
@@ -160,8 +163,9 @@ export const RETREATS: Retreat[] = [
     startDate: TBA_PLACEHOLDER_START,
     endDate: TBA_PLACEHOLDER_END,
     datesTba: true,
-    price: 289000,
-    deposit: 60000,
+    price: 0,
+    priceTba: true,
+    deposit: 0,
     capacity: 16,
     spotsLeft: 16,
     image:

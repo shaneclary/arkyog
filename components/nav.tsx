@@ -8,8 +8,9 @@ import { SITE } from '@/lib/site';
 import { ButtonLink } from './ui/button';
 
 const NAV = [
-  { href: '/teach', label: 'Teach' },
-  { href: '/trainings', label: 'Trainings' },
+  { href: '/teach', label: 'Practice' },
+  { href: '/trainings', label: 'Programs' },
+  { href: '/master', label: 'Master’s Practice' },
   { href: '/retreats', label: 'Retreats' },
   { href: '/journal', label: 'Journal' },
   { href: '/library', label: 'Library' },

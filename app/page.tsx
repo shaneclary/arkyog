@@ -1,5 +1,6 @@
 import { Hero } from '@/components/hero';
 import { PressStrip } from '@/components/press-strip';
+import { WhoItsFor } from '@/components/who-its-for';
 import { ClassCard } from '@/components/class-card';
 import { RetreatCard } from '@/components/retreat-card';
 import { Testimonials } from '@/components/testimonials';
@@ -25,6 +26,7 @@ export default function HomePage() {
     <>
       <Hero />
       <PressStrip />
+      <WhoItsFor />
 
       {/* Featured classes */}
       <section className="container-page py-24 md:py-32">
@@ -84,7 +86,7 @@ export default function HomePage() {
                 <Detail label="Begins" value="Announced soon" />
                 <Detail label="Format" value="Online · self-paced" />
                 <Detail label="Duration" value="12 months" />
-                <Detail label="Investment" value={formatPrice(anchorTraining.price)} />
+                <Detail label="Investment" value={anchorTraining.priceTba ? 'Inquire' : formatPrice(anchorTraining.price)} />
               </dl>
               <ul className="mt-8 space-y-3">
                 {anchorTraining.highlights.slice(0, 4).map((h) => (

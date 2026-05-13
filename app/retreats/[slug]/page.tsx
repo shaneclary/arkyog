@@ -145,14 +145,19 @@ export default async function RetreatDetail({ params }: PageProps) {
 
           <aside className="lg:sticky lg:top-28 lg:self-start">
             <div className="rounded-[var(--radius-xl)] border border-[var(--color-sand)] bg-[var(--color-cream)] p-8 md:p-10">
-              <p className="eyebrow">Reserve your place</p>
+              <p className="eyebrow">{r.priceTba ? 'Reserve your place' : 'Reserve your place'}</p>
               <div className="mt-5 flex items-baseline justify-between">
-                <p className="font-serif text-4xl">{formatPrice(r.price)}</p>
-                <p className="text-sm text-[var(--color-stone)]">all-inclusive</p>
+                <p className="font-serif text-4xl">
+                  {r.priceTba ? 'Inquire' : formatPrice(r.price)}
+                </p>
+                <p className="text-sm text-[var(--color-stone)]">
+                  {r.priceTba ? 'pricing announced soon' : 'all-inclusive'}
+                </p>
               </div>
               <p className="mt-2 text-sm text-[var(--color-stone)]">
-                Reserve with {formatPrice(r.deposit)} deposit. Balance due 60 days
-                before retreat.
+                {r.priceTba
+                  ? 'Final pricing announced with retreat dates. Waitlist students get first booking access.'
+                  : `Reserve with ${formatPrice(r.deposit)} deposit. Balance due 60 days before retreat.`}
               </p>
               <div className="mt-6 grid grid-cols-2 gap-6 pt-6 border-t border-[var(--color-sand)]">
                 <div>

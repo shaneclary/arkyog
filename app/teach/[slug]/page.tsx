@@ -76,10 +76,10 @@ export default async function ClassDetail({ params }: PageProps) {
                 The full library is $24 / month.
               </h2>
               <p className="mt-4 text-[var(--color-stone)]">
-                {CLASSES.filter((x) => !x.isFree).length}+ classes · new release every Friday · cancel anytime.
+                {CLASSES.filter((x) => !x.isFree).length}+ classes · new releases monthly · the full library plus the live Sunday class.
               </p>
-              <ButtonLink href="/book?plan=monthly" size="lg" className="mt-6">
-                Start 7-day free trial
+              <ButtonLink href="/library" size="lg" className="mt-6">
+                Join the list
               </ButtonLink>
             </>
           ) : (
@@ -87,10 +87,10 @@ export default async function ClassDetail({ params }: PageProps) {
               <p className="eyebrow">Members library</p>
               <h2 className="mt-3 font-serif text-2xl md:text-3xl">Members only.</h2>
               <p className="mt-4 text-[var(--color-stone)]">
-                Try the practice free for seven days. $24 / month after, cancel any time.
+                Membership pricing and access announced at launch. Join the list to be first to know.
               </p>
-              <ButtonLink href="/book?plan=monthly" size="lg" className="mt-6">
-                Start free trial
+              <ButtonLink href="/library" size="lg" className="mt-6">
+                Join the list
               </ButtonLink>
             </>
           )}

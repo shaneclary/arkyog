@@ -24,6 +24,7 @@ export interface Course {
   datesTba: boolean;
   location: string;
   price: number;
+  priceTba: boolean;
   hours: number;
   highlights: string[];
   curriculum: { week: number; theme: string; topics: string[] }[];
@@ -42,6 +43,7 @@ export interface Retreat {
   endDate: string;
   datesTba: boolean;
   price: number;
+  priceTba: boolean;
   deposit: number;
   capacity: number;
   spotsLeft: number;

@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: SITE.url, lastModified: now, changeFrequency: 'weekly', priority: 1 },
     { url: `${SITE.url}/teach`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE.url}/trainings`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${SITE.url}/master`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE.url}/retreats`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE.url}/journal`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE.url}/library`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
