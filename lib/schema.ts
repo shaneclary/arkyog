@@ -30,9 +30,9 @@ export function personSchema() {
       'Pranayama and kriya',
       'Body Mastery method',
     ],
-    hasCredential: SITE.certifications.map((c) => ({
+    hasCredential: SITE.credentials.map((c) => ({
       '@type': 'EducationalOccupationalCredential',
-      credentialCategory: c,
+      credentialCategory: c.title,
     })),
   };
 }
