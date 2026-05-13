@@ -81,7 +81,7 @@ export default function HomePage() {
                 </span>
               </div>
               <dl className="mt-8 grid grid-cols-2 gap-6">
-                <Detail label="Begins" value="Rolling cohorts" />
+                <Detail label="Begins" value="Announced soon" />
                 <Detail label="Format" value="Online · self-paced" />
                 <Detail label="Duration" value="12 months" />
                 <Detail label="Investment" value={formatPrice(anchorTraining.price)} />

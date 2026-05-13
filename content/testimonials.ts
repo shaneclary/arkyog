@@ -23,7 +23,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Sarah Okonkwo',
     role: 'Studio owner · Chicago',
     quote:
-      'I came to his Hawaii intensive exhausted from running a studio. Seven days later I went home with a practice I could actually sustain — and a hard look at what I had been teaching for ten years.',
+      'I came to his Corfu retreat exhausted from running a studio. Seven days later I went home with a practice I could actually sustain — and a hard look at what I had been teaching for ten years.',
   },
   {
     name: 'Jonas Werner',

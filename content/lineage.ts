@@ -4,8 +4,8 @@ export const LINEAGE: LineageTeacher[] = [
   {
     name: 'Sri K. Pattabhi Jois',
     years: 'studied 1990s–2000s',
-    lineage: 'Ashtanga · Mysore',
-    note: "Multiple trips to Mysore. Authorized in the lineage. The discipline of self-practice, the heat, the rhythm — all of it begins here.",
+    lineage: 'Ashtanga',
+    note: "Years of direct study. Authorized in the lineage. The discipline of self-practice, the heat, the rhythm — all of it begins here.",
   },
   {
     name: 'B.K.S. Iyengar',

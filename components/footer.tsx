@@ -43,7 +43,7 @@ export function Footer() {
               The Sunday letter.
             </h2>
             <p className="mt-4 max-w-md text-[var(--color-bone)]/70 leading-relaxed">
-              One short note a week from Hawaii — practice prompts, philosophy,
+              One short note a week from Riga — practice prompts, philosophy,
               and the occasional contrarian opinion. Sent Sundays. Read by
               {' '}twelve thousand students worldwide. No spam, ever.
             </p>
@@ -71,7 +71,7 @@ export function Footer() {
         <div className="mt-20 pt-8 border-t border-[var(--color-bone)]/15 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-[var(--color-bone)]/55">
           <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
           <p>
-            Designed in Hawaii. Built on{' '}
+            Designed in Riga. Built on{' '}
             <a
               href="https://nextjs.org"
               className="underline underline-offset-4 hover:text-[var(--color-bone)]"

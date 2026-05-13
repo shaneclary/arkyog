@@ -26,15 +26,24 @@ export function RetreatCard({ item, feature = false }: { item: Retreat; feature?
             <Badge tone="ink" className="absolute top-5 left-5">
               {item.format === 'in-person' ? 'In person' : item.format}
             </Badge>
-            {item.spotsLeft <= 4 && item.spotsLeft > 0 && (
+            {!item.datesTba && item.spotsLeft <= 4 && item.spotsLeft > 0 && (
               <Badge tone="terracotta" className="absolute top-5 right-5">
                 {item.spotsLeft} spots left
+              </Badge>
+            )}
+            {item.datesTba && (
+              <Badge tone="terracotta" className="absolute top-5 right-5">
+                Dates announced soon
               </Badge>
             )}
           </div>
           <CardBody className={feature ? 'flex flex-col justify-between' : ''}>
             <div>
-              <p className="eyebrow">{formatDateRange(item.startDate, item.endDate)}</p>
+              <p className="eyebrow">
+                {item.datesTba
+                  ? 'Dates announced soon'
+                  : formatDateRange(item.startDate, item.endDate)}
+              </p>
               <h3 className={`mt-3 font-serif leading-tight ${feature ? 'text-3xl md:text-4xl' : 'text-2xl'}`}>
                 {item.title}
               </h3>

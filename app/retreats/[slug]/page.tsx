@@ -78,9 +78,11 @@ export default async function RetreatDetail({ params }: PageProps) {
           <div className="container-page h-full flex items-end pb-12 md:pb-16 text-[var(--color-bone)]">
             <div className="max-w-3xl">
               <div className="flex flex-wrap items-center gap-2 mb-5">
-                <Badge tone="ink">{formatDateRange(r.startDate, r.endDate)}</Badge>
+                <Badge tone="ink">
+                  {r.datesTba ? 'Dates announced soon' : formatDateRange(r.startDate, r.endDate)}
+                </Badge>
                 <Badge tone="terracotta">{r.format}</Badge>
-                {r.spotsLeft <= 4 && (
+                {!r.datesTba && r.spotsLeft <= 4 && (
                   <Badge tone="sage">{r.spotsLeft} spots remaining</Badge>
                 )}
               </div>
@@ -161,18 +163,33 @@ export default async function RetreatDetail({ params }: PageProps) {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-[var(--color-stone)]">
-                    Remaining
+                    {r.datesTba ? 'Status' : 'Remaining'}
                   </p>
-                  <p className="mt-1 font-serif text-xl">{r.spotsLeft}</p>
+                  <p className="mt-1 font-serif text-xl">
+                    {r.datesTba ? 'Waitlist' : r.spotsLeft}
+                  </p>
                 </div>
               </div>
               <div className="mt-8 flex flex-col gap-3">
-                <ButtonLink href={`/book?retreat=${r.slug}`} size="lg">
-                  Reserve with deposit
-                </ButtonLink>
-                <ButtonLink href={`/book?topic=retreat-question&retreat=${r.slug}`} variant="secondary" size="lg">
-                  Ask a question
-                </ButtonLink>
+                {r.datesTba ? (
+                  <>
+                    <ButtonLink href={`/book?topic=retreat-waitlist&retreat=${r.slug}`} size="lg">
+                      Join the waitlist
+                    </ButtonLink>
+                    <ButtonLink href={`/book?topic=retreat-question&retreat=${r.slug}`} variant="secondary" size="lg">
+                      Ask a question
+                    </ButtonLink>
+                  </>
+                ) : (
+                  <>
+                    <ButtonLink href={`/book?retreat=${r.slug}`} size="lg">
+                      Reserve with deposit
+                    </ButtonLink>
+                    <ButtonLink href={`/book?topic=retreat-question&retreat=${r.slug}`} variant="secondary" size="lg">
+                      Ask a question
+                    </ButtonLink>
+                  </>
+                )}
               </div>
             </div>
           </aside>

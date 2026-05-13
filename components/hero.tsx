@@ -32,7 +32,7 @@ export function Hero() {
           </h1>
           <p className="mt-7 max-w-xl text-lg md:text-xl text-[var(--color-stone)] leading-relaxed">
             At {SITE.age}, {SITE.teacher} moves with the body of a teenage athlete and
-            the lineage of four decades. A complete system of mind and body wellness —
+            the lineage of five decades. A complete system of mind and body wellness —
             for athletes, beginners, busy people, and serious students of the
             practice.
           </p>
@@ -51,9 +51,12 @@ export function Hero() {
             <Stat label="Disciplines integrated" value="6" />
             <Stat label="Hours online practice" value="20+" />
           </dl>
+          <p className="mt-4 text-xs text-[var(--color-stone)]">
+            Based in Riga, Latvia. Teaching worldwide online and on retreat.
+          </p>
         </div>
 
-        {/* Portrait — Arkady in Hawaii, frangipani lei, holding the Yoga Sutras */}
+        {/* Portrait — Arkady on retreat, frangipani lei, holding the Yoga Sutras */}
         <div className="relative">
           <div className="relative aspect-[4/5] rounded-[var(--radius-2xl)] overflow-hidden bg-[var(--color-clay)] shadow-2xl shadow-black/15">
             {/* eslint-disable-next-line @next/next/no-img-element */}

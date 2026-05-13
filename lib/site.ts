@@ -10,15 +10,15 @@ export const SITE = {
   description:
     "ARK YOGA — the ARKademy of Arkady Shirin. A complete system of mind and body wellness for all ages. Drawn from Ashtanga, Iyengar, Shaolin, Tai Chi, ballet, and gymnastics. Live Sunday class, 20+ hours of pre-recorded practice, and the only system that certifies the student before the teacher.",
   longDescription:
-    "Six decades on the mat. A direct line back to Jois, Iyengar, and Akilanka. A body trained by ballet, gymnastics, and Shaolin before yoga ever entered the picture. What Arkady teaches is not a style — it is a complete system of body mastery: how to wake up the organs, how to release the spine, how to live in the body without injury for sixty more years.",
+    "Five decades on the mat. A direct line back to Jois, Iyengar, and Akilanka. A body trained by ballet, gymnastics, and Shaolin before yoga ever entered the picture. What Arkady teaches is not a style — it is a complete system of body mastery: how to wake up the organs, how to release the spine, how to live in the body — at seventy-three — with the strength and grace of a teenage athlete.",
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://arkyog.com',
   email: 'hello@arkyog.com',
-  location: 'Hawaii · New York · Worldwide online',
+  location: 'Riga, Latvia · Worldwide online',
   founded: '1985',
   studentsTaught: 8000,
   teachersTrained: 140,
-  yearsTeaching: 40,
-  age: 60,
+  yearsTeaching: 45,
+  age: 72,
   hero: {
     portrait: '/images/95832867_617829082145550_4150069891300327424_n.jpg',
     quote: 'Yoga is adapted to the individual — not the individual to yoga.',
@@ -35,7 +35,7 @@ export const SITE = {
     'Yoga Journal',
     'Tricycle',
     'Mantra Magazine',
-    'Hawaii Public Radio',
+    'Latvian Public Radio',
     'OM Yoga',
     'Origin Magazine',
   ],

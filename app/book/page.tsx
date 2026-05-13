@@ -125,7 +125,7 @@ export default function BookPage() {
             </p>
             <p>
               <strong className="text-[var(--color-ink)]">Time zones</strong> — All sessions
-              held on Hawaii time (HST). Cal.com auto-converts to yours.
+              held on Riga time (EET). Cal.com auto-converts to yours.
             </p>
           </div>
         </div>

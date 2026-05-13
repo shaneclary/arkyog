@@ -10,7 +10,7 @@ import { courseSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Teacher Trainings',
   description:
-    'Three structured ARKademy programs with Arkady Shirin: the Foundation Series (one year to Certified Yoga Student), the three-year Body Mastery Program, and the 200-hour Yoga Alliance-registered Teacher Training. Hawaii intensives and online.',
+    'Three structured ARKademy programs with Arkady Shirin: the Foundation Series (one year to Certified Yoga Student), the three-year Body Mastery Program, and the 200-hour Yoga Alliance-registered Teacher Training. Riga intensives, retreat intensives in Greece and Turkey, plus online.',
 };
 
 export const revalidate = 3600;

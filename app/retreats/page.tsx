@@ -8,7 +8,7 @@ import { eventSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Retreats',
   description:
-    "Hawaii, Mysore, and Baltic banya retreats with Arkady Shirin. Small groups, the full Body Mastery method, the kind of week that recalibrates a year.",
+    "Retreats with Arkady Shirin in Corfu, Montenegro, southern Turkey, the Caucasus of Georgia, and Miami. Small groups, the full Body Mastery method, the kind of week that recalibrates a year.",
 };
 
 export const revalidate = 3600;
@@ -26,14 +26,16 @@ export default function RetreatsPage() {
       ))}
 
       <header className="container-page pt-24 md:pt-32 pb-16 md:pb-20">
-        <p className="eyebrow">Three a year, never more</p>
+        <p className="eyebrow">Five locations · small groups</p>
         <h1 className="mt-5 font-serif text-5xl md:text-7xl leading-[1.0] max-w-4xl">
           The kind of week that recalibrates a year.
         </h1>
         <p className="mt-7 max-w-2xl text-lg text-[var(--color-stone)] leading-relaxed">
           Retreats are not vacations and not bootcamps. They're the rare
-          condition under which a real practice can land. Small groups, real
-          places, honest schedules.
+          condition under which a real practice can land. Corfu, Montenegro,
+          southern Turkey, Miami, and the Caucasus of Georgia — small groups,
+          real places, honest schedules. Dates announced as each retreat is
+          confirmed. Join the waitlist below to be first to know.
         </p>
       </header>
 

@@ -68,7 +68,7 @@ export const CLASSES: ClassItem[] = [
     level: 'intermediate',
     duration: 40,
     description:
-      "Filmed on a beach in Hawaii. Cardio that feels like play — running drills, jumps, animal movements, breath work — borrowed from Shaolin and gymnastics. Done in bare feet, in the sand.",
+      "Filmed on the Baltic coast at midsummer. Cardio that feels like play — running drills, jumps, animal movements, breath work — borrowed from Shaolin and gymnastics. Done in bare feet, in the sand.",
     isFree: false,
   },
   {

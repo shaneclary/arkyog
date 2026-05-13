@@ -21,6 +21,7 @@ export interface Course {
   format: Format;
   startDate: string;
   endDate: string;
+  datesTba: boolean;
   location: string;
   price: number;
   hours: number;
@@ -39,6 +40,7 @@ export interface Retreat {
   location: string;
   startDate: string;
   endDate: string;
+  datesTba: boolean;
   price: number;
   deposit: number;
   capacity: number;

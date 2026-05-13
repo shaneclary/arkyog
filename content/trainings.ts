@@ -1,5 +1,13 @@
 import type { Course } from './types';
 
+/**
+ * Dates intentionally TBA. The startDate/endDate fields are placeholders
+ * kept only so the Course JSON-LD validates. `datesTba: true` causes the
+ * UI to render "Dates announced soon".
+ */
+const TBA_START = '2099-01-01';
+const TBA_END = '2099-12-31';
+
 export const TRAININGS: Course[] = [
   {
     slug: 'foundation-series',
@@ -9,8 +17,9 @@ export const TRAININGS: Course[] = [
     level: 'Foundation · pre-requisite',
     duration: '1 year · self-paced + monthly live cohort calls',
     format: 'online',
-    startDate: '2026-06-01',
-    endDate: '2027-06-01',
+    startDate: TBA_START,
+    endDate: TBA_END,
+    datesTba: true,
     location: 'Online · worldwide',
     price: 79000,
     hours: 100,
@@ -60,9 +69,10 @@ export const TRAININGS: Course[] = [
     level: 'Advanced',
     duration: '3 years · quarterly intensives + weekly online',
     format: 'hybrid',
-    startDate: '2026-09-01',
-    endDate: '2029-09-01',
-    location: 'Hawaii intensives + Online weekly',
+    startDate: TBA_START,
+    endDate: TBA_END,
+    datesTba: true,
+    location: 'Riga + retreat intensives + online weekly',
     price: 489000,
     hours: 700,
     highlights: [
@@ -71,7 +81,7 @@ export const TRAININGS: Course[] = [
       'The Master\'s practices: Chaya Chankalanam, Dance of Shiva, Tiger by candlelight',
       'Tai Chi and Shaolin elements integrated throughout',
       'Yoga Sutra study with classical commentaries',
-      'Quarterly Hawaii intensives — small group',
+      'Quarterly retreat-location intensives — small group',
       'Lifetime access to the recorded library',
     ],
     curriculum: [
@@ -103,9 +113,10 @@ export const TRAININGS: Course[] = [
     level: 'Teacher training',
     duration: '6 months · 4 in-person intensives + weekly mentorship',
     format: 'hybrid',
-    startDate: '2027-01-15',
-    endDate: '2027-07-15',
-    location: 'Hawaii + Online',
+    startDate: TBA_START,
+    endDate: TBA_END,
+    datesTba: true,
+    location: 'Riga + Online',
     price: 649000,
     hours: 200,
     highlights: [

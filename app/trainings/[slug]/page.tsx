@@ -69,7 +69,7 @@ export default async function TrainingDetail({ params }: PageProps) {
 
         <section className="bg-[var(--color-cream)] border-y border-[var(--color-sand)]">
           <div className="container-page py-12 md:py-14 grid grid-cols-2 md:grid-cols-4 gap-8">
-            <Detail label="Begins" value={formatDateRange(t.startDate, t.endDate).split('–')[0].trim()} />
+            <Detail label="Begins" value={t.datesTba ? 'Announced soon' : formatDateRange(t.startDate, t.endDate).split('–')[0].trim()} />
             <Detail label="Duration" value={t.duration} />
             <Detail label="Location" value={t.location} />
             <Detail label="Investment" value={formatPrice(t.price)} />
