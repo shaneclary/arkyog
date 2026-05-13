@@ -27,7 +27,6 @@ const COLUMNS = [
     links: [
       { href: '/about', label: 'Bio & Lineage' },
       { href: '/about#credentials', label: 'Credentials' },
-      { href: '/about#press', label: 'Press' },
       { href: `mailto:${SITE.email}`, label: 'Contact' },
     ],
   },
